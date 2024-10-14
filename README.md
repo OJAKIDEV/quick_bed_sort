@@ -20,4 +20,19 @@ curl -JLO "https://figshare.com/s/727f8d920a1b8415f09a"
 gunzip shuf.a.bed.gz
 gunzip shuf.b.bed.gz 
 
+# 6. Execution
+
+COMMAND TO CHECK POTENTIAL O/P:
+snakemake -s quick_bed_sort.smk --cores 4 --dry-run
+
+COMMAND TO CHECK REAL TIME EXECUTION:
+snakemake -s quick_bed_sort.smk --cores 4 -p  : PRINTS SHELL COMMANDS
+snakemake -s quick_bed_sort.smk --cores 4 -v : PRINTS IN VERBOSE MODE
+
+COMMANDS TO EXECUTE THE CODE FOR quick_bed_sort: - 
+snakemake -s quick_bed_sort.smk --cores 4 : RUN USING 4 CORES
+snakemake -s quick_bed_sort.smk --cores all : RUN USING ALL CORES
+snakemake -s quick_bed_sort.smk --cores 1 : NO PARALLELIZATION
+
+
 
