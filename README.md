@@ -1,14 +1,14 @@
 # quick_bed_sort
 
-#1.	Clone Repository
-#git clone https://github.com/OJAKIDEV/quick_bed_sort.git
-# cd quick_bed_sort
+# 1.	Clone Repository
+git clone https://github.com/OJAKIDEV/quick_bed_sort.git
+cd quick_bed_sort
 
-#2.	Create environment
+# 2.	Create environment
 # mamba create -n bed_sort_env python=3.10.14
 # mamba activate bed_sort_env
 
-#3.	install required libraries
+# 3.	install required libraries
 # mamba install -c bioconda snakemake 
 
 #4.	Data download
